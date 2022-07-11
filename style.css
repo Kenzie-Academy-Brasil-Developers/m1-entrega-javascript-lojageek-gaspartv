@@ -18,13 +18,13 @@ header {
     padding: 15px 30px 10px 30px;
 }
 
-#navMenu ul {
+#navMenu div {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-#navMenu ul li {
+#navMenu div button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,11 +35,13 @@ header {
     font-size: 20px;
     border-radius: 8px;
     font-family: 'Roboto', sans-serif;
+    border: 0px;
 }
 
-#navMenu ul li:hover {
+#navMenu div button:hover {
     background-color: #0A99FE;
     color: #ffffff;
+    cursor: pointer;
 }
 
 main {

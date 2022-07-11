@@ -32,12 +32,12 @@ function javaScriptDOO() {
   let secaoListActionFigures = document.getElementById("secaoAction")
 
   if (listPainting.length > 0) {
-    let section = document.createElement("section")
-    section.id = "sectionPaintings"
+    let ul = document.createElement("ul")
+    ul.id = "sectionPaintings"
 
     for (let i = 0; i < listPainting.length; i++) {
-      let div = document.createElement("div")
-      div.classList.add("paintings")
+      let li = document.createElement("li")
+      li.classList.add("paintings")
       let imagem = document.createElement("img")
       let nome = document.createElement("h3")
       let valor = document.createElement("p")
@@ -46,21 +46,21 @@ function javaScriptDOO() {
       nome.innerText = listPainting[i].nome
       valor.innerText = listPainting[i].valor
   
-      section.appendChild(div)
-      div.appendChild(imagem)
-      div.appendChild(nome)
-      div.appendChild(valor)
+      ul.appendChild(li)
+      li.appendChild(imagem)
+      li.appendChild(nome)
+      li.appendChild(valor)
   
     }
-    secaoListPaintings.append(section)
+    secaoListPaintings.append(ul)
   }
   if (listFigure.length > 0) {
-    let section = document.createElement("section")
-    section.id = "sectionActionFigures"
+    let ul = document.createElement("ul")
+    ul.id = "sectionActionFigures"
 
     for (let i = 0; i < listFigure.length; i++) {
-      let div = document.createElement("div")
-      div.classList.add("actions")
+      let li = document.createElement("li")
+      li.classList.add("actions")
       let imagem = document.createElement("img")
       let nome = document.createElement("h3")
       let valor = document.createElement("p")
@@ -69,13 +69,13 @@ function javaScriptDOO() {
       nome.innerText = listFigure[i].nome
       valor.innerText = listFigure[i].valor
   
-      section.appendChild(div)
-      div.appendChild(imagem)
-      div.appendChild(nome)
-      div.appendChild(valor)
+      ul.appendChild(li)
+      li.appendChild(imagem)
+      li.appendChild(nome)
+      li.appendChild(valor)
   
     }
-    secaoListActionFigures.append(section)
+    secaoListActionFigures.append(ul)
   }
 }
 
